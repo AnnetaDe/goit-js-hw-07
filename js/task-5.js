@@ -7,8 +7,10 @@ function getRandomHexColor() {
 const magicBtn = document.querySelector('.change-color');
 const colorSpan = document.querySelector('.color');
 const widget = document.querySelector('.widget');
-magicBtn.addEventListener('click', () => {
+const widgetParagraph = document.querySelector(".widget p");
+magicBtn.addEventListener("click", () => {
   widget.style.backgroundColor = getRandomHexColor();
   colorSpan.textContent = getRandomHexColor();
+  widgetParagraph.style.color = getRandomHexColor();
 });
 

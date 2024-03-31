@@ -195,14 +195,14 @@ label {
   border: solid #6C8CFF;
 }
 /* task 6 */
-#controls {
+.controls {
   padding: 32px;
   margin-bottom: 16px;
   background-color: #f6f6fe;
   border-radius: 8px;
 }
-#create,
-#destroy {
+.create,
+.destroy {
   width: 120px;
   height: 40px;
   border-radius: 8px;
@@ -215,24 +215,24 @@ label {
   text-align: center;
   cursor: pointer;
 }
-#create {
+.create {
 background-color: #4e75ff;
 border: solid #4e75ff;
 }
-#create:hover {
+.create:hover {
 background-color: #6C8CFF;
 border: solid #6C8CFF;
 }
-#destroy:hover {
+.destroy:hover {
 background: #FF7070;
 border: solid #FF7070;
 }
 
-#destroy {
+.destroy {
 background-color: #ff4e4e;
 border: solid #ff4e4e;
 }
-#boxes {
+.boxes {
   padding: 32px;
   display: flex;
   column-gap: 16px;

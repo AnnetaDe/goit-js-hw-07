@@ -4,22 +4,24 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
+const controls = document.querySelector("#controls");
+const input = document.querySelector("input");
+const createBtn = controls.querySelector("button[data-create]");
+const destroyBtn = controls.querySelector("button[data-destroy]");
 
+createBtn.className = "create";
+destroyBtn.className = "destroy";
+controls.className = "controls";
 
-
-const controls = document.querySelector('#controls');
-const input = document.querySelector('input');
-const createBtn = document.querySelector('#create');
-const destroyBtn = document.querySelector('#destroy');
-const boxes = document.querySelector('#boxes');
+const boxes = document.querySelector("#boxes");
+boxes.className = "boxes";
 let amount;
-input.className = 'input-for-task-6';
+input.className = "input-for-task-6";
 
-input.addEventListener('input', () => {
-  if (input.value>0 && input.value<100) {
+input.addEventListener("input", () => {
+  if (input.value > 0 && input.value <= 100) {
     amount = input.value;
   }
-
 });
 
 function createBoxes(amount) {
